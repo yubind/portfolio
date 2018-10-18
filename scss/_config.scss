@@ -1,0 +1,35 @@
+//colors
+$highlight: #E59576;
+$html: #e34f26;
+$css: #5144c9;
+$js: #f7df1e;
+$node: #44883e;
+$offwhite: #fffff2;
+
+
+
+//media query mixins
+@mixin mediaSm {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media only screen and (max-width: 768px) and (min-width: 501px) {
+        @content;
+    }
+}
+
+
+@mixin mediaLg {
+    @media only screen and (max-width: 1170px) and (min-width: 769px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media only screen and (min-width: 1171px) {
+        @content;
+    }
+}

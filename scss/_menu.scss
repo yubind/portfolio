@@ -1,0 +1,19 @@
+.current {
+    color: $highlight !important;
+    font-weight: bold;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-bottom: 3px #EDC3B2 solid;
+    z-index: 10;
+    color: $offwhite;
+    
+    .navbar-brand {
+        color: #ffe2e2;
+    }
+}
+
+
