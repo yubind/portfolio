@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    $('body').css({ "display" : "block" });
+    $('.fadeinup-animate').css({ "opacity" : "0" });
+    $('.fadeinright-animate').css({ "opacity" : "0" });
+
+  //fadeinup animation
+  $('.fadeinup-animate').waypoint(function() {
+    $(this.element).addClass('fadeinup');
+     }, { offset: '100%'});
+  
+  $('.fadeinright-animate').waypoint(function() {
+    $(this.element).addClass('fadeinright');
+     }, { offset: '100%'});
+  
    //scroll animation 
   $('a[href^="#"]').on('click', function(e) {
     var target = $(this.getAttribute('href'));

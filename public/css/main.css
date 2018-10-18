@@ -1,3 +1,25 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 70%, 0); }
+  100% {
+    opacity: 1;
+    transform: tranlate3d(0, 0, 0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-40%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+.fadeinright {
+  animation: 1.5s forwards fadeInRight; }
+
+.fadeinup {
+  animation: 1.5s forwards fadeInUp; }
+
 .current {
   color: #E59576 !important;
   font-weight: bold; }
@@ -8,13 +30,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 3px #EDC3B2 solid;
   z-index: 10;
+  margin: 0;
+  padding: 0;
   color: #fffff2; }
-  .navbar .navbar-brand {
-    color: #ffe2e2; }
 
 body {
   box-sizing: border-box;
-  color: #444444; }
+  color: #444444;
+  font-family: 'Chakra Petch', sans-serif;
+  display: none; }
 
 *, *:before, *:after {
   margin: 0;
@@ -35,8 +59,16 @@ a {
   a:hover {
     text-decoration: none; }
 
+p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem; }
+
 span.name {
   color: #E59576;
+  font-weight: bold; }
+
+span.blue {
+  color: #8d9cbc;
   font-weight: bold; }
 
 .btn.btn-primary {
@@ -68,17 +100,24 @@ span.name {
       border-radius: 50%;
       border: none; }
   #about .description {
-    padding: 6rem 2rem 6rem 2rem;
-    font-size: 1.25rem; }
+    padding: 6rem 2rem 6rem 2rem; }
   #about .skills {
     margin: 3rem 0 5rem 5rem; }
-    #about .skills .fa-html5 {
+    #about .skills .icons:nth-child(2) {
+      animation-delay: 200ms; }
+    #about .skills .icons:nth-child(3) {
+      animation-delay: 400ms; }
+    #about .skills .icons:nth-child(4) {
+      animation-delay: 600ms; }
+    #about .skills .icons:nth-child(5) {
+      animation-delay: 800ms; }
+    #about .skills .icons .fa-html5 {
       color: #e34f26; }
-    #about .skills .fa-css3-alt {
+    #about .skills .icons .fa-css3-alt {
       color: #5144c9; }
-    #about .skills .fa-js {
+    #about .skills .icons .fa-js {
       color: #f7df1e; }
-    #about .skills .fa-node {
+    #about .skills .icons .fa-node {
       color: #44883e; }
 
 #work {
@@ -141,7 +180,19 @@ span.name {
       #contact .contact-btn-group .contact-btn:hover {
         padding: 2rem 3rem;
         background-color: #E59576;
-        color: #fff; }
+        color: #fff;
+        border-color: #fffff2; }
+      #contact .contact-btn-group .contact-btn:nth-child(2) {
+        animation-delay: 200ms; }
+      #contact .contact-btn-group .contact-btn:nth-child(3) {
+        animation-delay: 400ms; }
+      #contact .contact-btn-group .contact-btn:nth-child(4) {
+        animation-delay: 600ms; }
+
+footer {
+  background-color: #444;
+  padding: 2rem;
+  color: #8d9cbc; }
 
 @media only screen and (max-width: 500px) {
   .navbar .container {
@@ -158,6 +209,7 @@ span.name {
     #about .skills .icons {
       margin: 0 3rem 3rem 0; }
   #contact .contact-btn-group .contact-btn {
+    margin-bottom: 2rem;
     font-size: 1.5rem; } }
 
 @media only screen and (max-width: 768px) and (min-width: 501px) {

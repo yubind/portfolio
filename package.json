@@ -12,6 +12,7 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "node-sass": "^4.9.4"
+    "node-sass": "^4.9.4",
+    "waypoints": "^4.0.1"
   }
 }

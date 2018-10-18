@@ -5,6 +5,8 @@
 body {
     box-sizing: border-box;
     color: #444444;
+    font-family: 'Chakra Petch', sans-serif;
+    display: none;
 }
 
 *, *:before, *:after {
@@ -35,9 +37,18 @@ a {
     }
 }
 
+p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+}
 
 span.name {
     color: $highlight;
+    font-weight: bold;
+}
+
+span.blue {
+    color: $blue_highlight;
     font-weight: bold;
 }
 
@@ -89,27 +100,45 @@ span.name {
     
     .description {
         padding: 6rem 2rem 6rem 2rem;
-        font-size: 1.25rem;
     }
     
     .skills {
         margin: 3rem 0 5rem 5rem;
         
-        .fa-html5 {
-            color: $html;
+        .icons {
+            &:nth-child(2) {
+                animation-delay: 200ms;
+            }
+            
+            &:nth-child(3) {
+                animation-delay: 400ms;
+            }
+            
+            &:nth-child(4) {
+                animation-delay: 600ms;
+            }
+            
+            &:nth-child(5) {
+                animation-delay: 800ms;
+            }
+            
+            .fa-html5 {
+                color: $html;
+            }
+        
+            .fa-css3-alt {
+                color: $css;
+            }
+            
+            .fa-js {
+                color: $js;
+            }
+            
+            .fa-node {
+                color: $node;
+            }
         }
         
-        .fa-css3-alt {
-            color: $css;
-        }
-        
-        .fa-js {
-            color: $js;
-        }
-        
-        .fa-node {
-            color: $node;
-        }
     }
 }
 
@@ -198,13 +227,14 @@ span.name {
     
     .contact-btn-group {
         margin: 4rem 1rem;
-        
+            
         .contact-btn {
             font-size: 2rem;
             border: 1px solid rgba(0, 0, 0, 0.4);
             margin: 1rem;
             padding: 1rem 2rem;
             transition: all .3s ease-in-out;
+            
             
             .fab, .fas {
                 margin: 0 .5rem;
@@ -214,9 +244,28 @@ span.name {
                 padding: 2rem 3rem;
                 background-color: $highlight;
                 color: #fff;
+                border-color: $offwhite;
+            }
+            
+            &:nth-child(2) {
+                animation-delay: 200ms;
+            }
+            
+            &:nth-child(3) {
+                animation-delay: 400ms;
+            }
+            
+            &:nth-child(4) {
+                animation-delay: 600ms;
             }
         }
     }
+}
+
+footer {
+    background-color: #444;
+    padding: 2rem;
+    color: $blue_highlight;
 }
 
 
@@ -258,7 +307,8 @@ span.name {
     
     #contact {
         .contact-btn-group {
-            .contact-btn{
+            .contact-btn {
+                margin-bottom: 2rem;
                 font-size: 1.5rem;
             }
         }

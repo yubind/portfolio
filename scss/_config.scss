@@ -1,11 +1,45 @@
 //colors
 $highlight: #E59576;
+$blue_highlight: #8d9cbc;
 $html: #e34f26;
 $css: #5144c9;
 $js: #f7df1e;
 $node: #44883e;
 $offwhite: #fffff2;
 
+//animations
+
+@keyframes fadeInUp {
+    0% { 
+        opacity: 0;
+        transform: translate3d(0, 70%, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: tranlate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(-40%, 0, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeinright {
+    animation: 1.5s forwards fadeInRight;
+}
+
+.fadeinup {
+    animation: 1.5s forwards fadeInUp;
+}
 
 
 //media query mixins
