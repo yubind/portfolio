@@ -17,6 +17,10 @@ body {
     &:focus {
         outline: none;
     }
+    
+    &:active {
+        outline: none;
+    }
  }
  
 ::selection {

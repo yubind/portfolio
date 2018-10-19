@@ -46,6 +46,8 @@ body {
   box-sizing: inherit; }
   *:focus, *:before:focus, *:after:focus {
     outline: none; }
+  *:active, *:before:active, *:after:active {
+    outline: none; }
 
 ::selection {
   background-color: #E59576;
