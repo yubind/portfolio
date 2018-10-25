@@ -171,7 +171,7 @@ span.blue {
   #contact .title {
     padding-top: 5rem; }
   #contact .contact-btn-group {
-    margin: 4rem 1rem; }
+    padding: 4rem 1rem; }
     #contact .contact-btn-group .contact-btn {
       font-size: 2rem;
       border: 1px solid rgba(0, 0, 0, 0.4);
