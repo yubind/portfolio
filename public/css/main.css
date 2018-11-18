@@ -55,11 +55,12 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: #444; }
   a:visited {
     color: inherit; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: inherit; }
 
 p {
   font-family: 'Rajdhani', sans-serif;
