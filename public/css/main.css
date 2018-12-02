@@ -55,12 +55,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #444; }
+  color: #fffff2; }
   a:visited {
-    color: inherit; }
+    color: #fffff2; }
   a:hover {
     text-decoration: none;
-    color: inherit; }
+    color: #E59576; }
 
 p {
   font-family: 'Rajdhani', sans-serif;
@@ -179,13 +179,18 @@ span.blue {
       margin: 1rem;
       padding: 1rem 2rem;
       transition: all .3s ease-in-out; }
+      #contact .contact-btn-group .contact-btn * {
+        color: #444;
+        transition: all .3s ease-in-out; }
       #contact .contact-btn-group .contact-btn .fab, #contact .contact-btn-group .contact-btn .fas {
         margin: 0 .5rem; }
       #contact .contact-btn-group .contact-btn:hover {
         padding: 2rem 3rem;
         background-color: #E59576;
-        color: #fff;
+        color: #fffff2;
         border-color: #fffff2; }
+        #contact .contact-btn-group .contact-btn:hover * {
+          color: #fffff2; }
       #contact .contact-btn-group .contact-btn:nth-child(2) {
         animation-delay: 200ms; }
       #contact .contact-btn-group .contact-btn:nth-child(3) {

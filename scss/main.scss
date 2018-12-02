@@ -30,15 +30,15 @@ body {
  
 a {
     text-decoration: none;
-    color: #444;
+    color: $offwhite;
     
     &:visited {
-        color: inherit;
+        color: $offwhite;
     }
     
     &:hover {
         text-decoration: none;
-        color: inherit;
+        color: $highlight;
     }
 }
 
@@ -240,7 +240,11 @@ span.blue {
             margin: 1rem;
             padding: 1rem 2rem;
             transition: all .3s ease-in-out;
-            
+           
+            * {
+                color: #444;
+                transition: all .3s ease-in-out;
+            }
             
             .fab, .fas {
                 margin: 0 .5rem;
@@ -249,8 +253,12 @@ span.blue {
             &:hover {
                 padding: 2rem 3rem;
                 background-color: $highlight;
-                color: #fff;
+                color: $offwhite;
                 border-color: $offwhite;
+                
+                * {
+                    color: $offwhite;
+                }
             }
             
             &:nth-child(2) {
