@@ -73,7 +73,7 @@ span.blue {
 //jumbotron
 #top {
     .jumbotron {
-        background: url(https://images.unsplash.com/photo-1516553174826-d05833723cd4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1ec0125fe2a1f9491ddb1cbfc28de667&auto=format&fit=crop&w=1494&q=80) no-repeat center center fixed;
+        background: url(https://images.unsplash.com/photo-1521571086300-579bd981bbb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) no-repeat center center fixed;
         height: 100vh;
         margin-bottom: 0;
     }
@@ -88,25 +88,22 @@ span.blue {
         padding: 8rem 0 0 2rem;
     }
     
-    .profile-img {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        left: 0;
-        margin-top: -95px;
-        margin-left: calc(50% - 100px);
-        
-        .img-thumbnail {
+    .about-contents {
+        .profile-img {
+            width: 200px;
+            height: 200px;
             position: relative;
             border-radius: 50%;
             border: none;
+            margin-top: 4rem;
+        }
+       
+        .profile-description {
+            padding: 6rem 2rem 6rem 2rem;
         }
     }
     
-    .description {
-        padding: 6rem 2rem 6rem 2rem;
-    }
-    
+   
     .skills {
         margin: 3rem 0 0 5rem;
         padding-bottom: 5rem;
@@ -155,7 +152,7 @@ span.blue {
 
 //work
 #work {
-    background: #F2D0BE;
+    background: $gray;
     padding: 6rem 0;
     
     .row {
@@ -204,11 +201,11 @@ span.blue {
             }
             
             &.heartly {
-                background-color: #D2CC89;
+                background-color: #a8a9ad;
             }
             
             &.blogapp {
-                background-color: #E4AC80;
+                background-color: #c1a085;
             }
             
             &:hover {
